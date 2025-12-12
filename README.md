@@ -36,3 +36,11 @@ The system uses 3 main tables:
 
 ## 👨‍💻 Developer
 **Saad** - Student Project
+
+
+
+## Setup Instructions
+
+1. Import `database.sql` into MySQL.
+2. Configure database connection in your PHP/backend files.
+3. Open `saad.html` in a web browser.
