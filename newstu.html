@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Data Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: antiquewhite;
+            padding: 40px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        h1 {
+            color: rgb(206, 147, 147);
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .text {
+            color: brown;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .input_container {
+            width: 400px;
+            max-width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .input_field {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: border 0.3s;
+        }
+        
+        .input_field:focus {
+            outline: none;
+            border-color: rgb(18, 112, 194);
+        }
+        
+        a {
+            display: inline-block;
+            color: rgb(18, 112, 194);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 30px 0;
+            background: white;
+            border: 2px solid rgb(18, 112, 194);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        a:hover {
+            background-color: rgb(18, 112, 194);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(18, 112, 194, 0.3);
+        }
+        
+        .img-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease;
+        }
+        
+        img:hover {
+            transform: rotate(360deg);
+        }
+        
+        /* تصميم متجاوب */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .input_container {
+                width: 90%;
+            }
+            
+            img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Data Form</h1>
+    
+    <form>
+        <p class="text">Enter Your ID:</p>
+        
+        <div class="input_container">
+            <label style="font-size: 18px; color: #555;">Student ID:</label>
+            <input type="text" name="student_id" class="input_field" placeholder="Enter your student ID">
+        </div>
+    </form>
+    
+    <a href="home.html">Back to Main Website</a>
+    
+    <div class="img-container">
+        <img src="6cca506f-36bf-4295-800b-ebeaa59a9073.png" alt="Our Logo">
+    </div>
+</body>
+</html>
